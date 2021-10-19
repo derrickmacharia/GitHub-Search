@@ -1,8 +1,10 @@
 
 <div class="container">
-    <div class="row">
+    <div class="row content">
         <div class="card col-md-6 mt-5 p-1 text-center" style="width: 20rem;">
-            <img [src]="username?.avatar_url" class="card-img-top" alt="My profile picture">
+            <div class="imglogo">
+                <img [src]="username?.avatar_url" class="card-img-top" alt="My profile picture">
+            </div>
             <div class="card-body">
               <h5 class="card-title">{{username?.login}}</h5>
               <p class="card-text">{{username?.bio}}</p>

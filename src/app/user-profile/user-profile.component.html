@@ -1,8 +1,8 @@
 <div class="mb-3 m-5 p-5 h-75 forms">
-    <form >
+    <form (ngSubmit)="searchingUser()" #d="ngForm">
         <label for="exampleFormControlInput1" class="form-label">Username :</label>
   
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search Github Username...">
+        <input type="text" class="form-control" id="exampleFormControlInput1"  placeholder="Search Github Username..." ngModel name = "search" #search = "ngModel">
         <br>
         <div class="button">
             <button type="button" class="btn btn-outline-dark">Search Username</button>
@@ -10,3 +10,8 @@
     </form>
 </div>
   
+<div class="conatiner" *ngIf="showUserProfile">
+    <!-- <div class="imglogo">
+        <img [src]="user.avatar_url" class="card-img-top" alt="My profile picture">
+    </div> -->
+</div>
