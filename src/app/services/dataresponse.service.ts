@@ -53,4 +53,31 @@ export class DataresponseService {
     })
     return userPromise
   }
+
+    getRepoSearch(gitUser) {
+      interface ApiResponse{
+         name: string,
+         html_url: string,
+         description: string,
+         created_at: Date,
+      }
+  
+      let repoPromise = new Promise<void>((resolve, reject)=>{
+        this.http.get<ApiResponse>(environment.apiUrl + '/' + gitUser + '/repos?sort=created&direction=desc??access_token=' + environment.apiToken).toPromise().then((Response)=>{
+          this.userRepositories = Response;
+          resolve()
+          console.log()
+        },(error)=>{
+          reject(error);
+          console.log (error)
+        })
+        
+        
+      })
+      return repoPromise
+
+
+
+
+  }
 }
