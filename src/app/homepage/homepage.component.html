@@ -1,39 +1,49 @@
 
 <div class="container">
-    <div class="row content">
-        <div class="card col-md-6 mt-5 p-1 text-center" style="width: 20rem;">
+    <div class="row home home1">
+        <div class="card col-md-6 display  content  mt-5 p-1 text-center" style="width: 28rem;">
             <div class="imglogo">
                 <img [src]="username?.avatar_url" class="card-img-top" alt="My profile picture">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">{{username?.login}}</h5>
-              <p class="card-text">{{username?.bio}}</p>
+            <div class="card-body ">
+              <h5 class="card-title">Name : {{username?.login}}</h5>
+              <p class="card-text">Bio : {{username?.bio}}</p>
               <p>Joined On : {{username?.created_at | date}}</p>
-              <p><i class="fa fa-user" aria-hidden="true"></i>{{username?.followers}}</p>
-              <p><i class="fa fa-user" aria-hidden="true"></i>{{username?.following}}</p>
+                <div class="likes">
+                    <p>Followers : <i class="fa fa-user" aria-hidden="true"></i>  {{username?.followers}}</p>
+                    <p>Following : <i class="fa fa-user" aria-hidden="true"></i>  {{username?.following}}</p>
+                </div>
             </div>
         </div>
-        <div class="card col-md-4">
-            <div class="card-body">
-                <h4>{{username?.name}}</h4>
+        <div class="card col-md-6  display">
+            <div class="card-body content">
+                <h4>Name: {{username?.name}}</h4>
                 <hr>
-                <a href="https://github.com/derrickmacharia">View site {{username?.html_url}}</a>
+                View site On : <a href="https://github.com/derrickmacharia">{{username?.html_url}}</a>
                 <hr>
-                <h4>{{username?.public_repos}}</h4>
+                <h4>Public Repos : {{username?.public_repos}}</h4>
                 <hr>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4" *ngFor="let userRepo of repositories; let i = index ">
-            <div class="">
-                <h3>{{userRepo.name}}</h3>
-                <p>{{userRepo.description}}</p>
-                <a href="{{userRepo.html_url}}">View Repositories</a>
-                <p>Created On : {{userRepo.created_at | date}}</p>
+        <div class="col-md-4 home" *ngFor="let userRepo of repositories; let i = index ">
+            <div class="display1">
+                <div class="content">
+                    <h3>{{userRepo.name}}</h3>
+                    <p>{{userRepo.description}}</p>
+                    <p>Created On : {{userRepo.created_at | date}}</p>
+                    <div class="submit">
+                        <div class="btns">
+                            <a href="{{userRepo.html_url}}">View Repositories</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
 </div>
 
 

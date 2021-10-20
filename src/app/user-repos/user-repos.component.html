@@ -1,11 +1,16 @@
-<div class="mb-3 m-5 p-5 h-75 forms">
-    <form>
+<div class="mb-3 m-5 p-5 h-75 forms display">
+    <form (ngSubmit)= "showUserRepo()" #x="ngForm" >
         <label for="exampleFormControlInput1" class="form-label">Repositories :</label>
 
-        <input type="text" class="form-control" id="exampleFormControlInput1"  placeholder="Search Github Repositories...">
+        <input type="text" class="form-control" id="exampleFormControlInput1"  ngModel  name= "derrick" #derrick ="ngModel" placeholder="Search Github Repositories...">
         <br>
         <div class="button">
-            <button type="button" class="btn btn-outline-info">Search Repositories</button>
+            <button type="submit" class="btn btn-outline-info">Search Repositories</button>
         </div>
     </form>
+</div>
+<div class="container" *ngFor ="let repos of repoGet" >
+    <div class="row">
+        {{repos?.description}}
+    </div>
 </div>

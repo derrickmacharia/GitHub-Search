@@ -1,17 +1,39 @@
-<div class="mb-3 m-5 p-5 h-75 forms">
+<div class="container mb-3 m-5 p-5 h-75 forms display">
     <form (ngSubmit)="searchingUser()" #d="ngForm">
         <label for="exampleFormControlInput1" class="form-label">Username :</label>
   
-        <input type="text" class="form-control" id="exampleFormControlInput1"  placeholder="Search Github Username..." ngModel name = "search" #search = "ngModel">
+        <input type="text" class="form-control" name="search" #search="ngModel" ngModel id="exampleFormControlInput1"  placeholder="Search Github Username..."  >
         <br>
         <div class="button">
-            <button type="button" class="btn btn-outline-dark">Search Username</button>
+            <button type="submit" class="btn btn-outline-info">Search Username</button>
         </div>
     </form>
 </div>
-  
-<div class="conatiner" *ngIf="showUserProfile">
-    <!-- <div class="imglogo">
-        <img [src]="user.avatar_url" class="card-img-top" alt="My profile picture">
-    </div> -->
+<div class="container" *ngIf="showUserProfile">
+        <div class="row home home1">
+        <div class="card col-md-6 display  content  mt-5 p-1 text-center" style="width: 28rem;">
+            <div class="imglogo">
+                <img [src]="userOne?.avatar_url" class="card-img-top" alt="My profile picture">
+            </div>
+            <div class="card-body ">
+              <h5 class="card-title">Name : {{userOne?.login}}</h5>
+              <p class="card-text">Bio : {{userOne?.bio}}</p>
+              <p>Joined On : {{userOne?.created_at | date}}</p>
+                <div class="likes">
+                    <p>Followers : <i class="fa fa-user" aria-hidden="true"></i>  {{userOne?.followers}}</p>
+                    <p>Following : <i class="fa fa-user" aria-hidden="true"></i>  {{userOne?.following}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-6  display">
+            <div class="card-body content">
+                <h4>Name: {{userOne?.name}}</h4>
+                <hr>
+                View site On : <a href="https://github.com/derrickmacharia">{{userOne?.html_url}}</a>
+                <hr>
+                <h4>Public Repos : {{userOne?.public_repos}}</h4>
+                <hr>
+            </div>
+        </div>
+    </div>
 </div>

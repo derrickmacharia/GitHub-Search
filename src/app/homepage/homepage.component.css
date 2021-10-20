@@ -1,3 +1,125 @@
 .imglogo img{
     border-radius: 50%;
 }
+.home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.prof{
+    padding: 3rem;
+}
+.home .display{
+    position: relative;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 3rem;
+    min-width: 400px;
+    min-height: 400px;
+}
+.display1{
+    position: relative;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 3rem;
+    min-width: 400px;
+    min-height: 400px;
+}
+.content{
+    color: #fff;
+}
+hr{
+    color: white;
+}
+.likes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.submit .btns{
+    position: relative;
+    margin: 20px;
+    /* width: 70px;
+    height: 10px; */
+}
+
+.submit .btns a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 16px;
+    overflow: hidden;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    backdrop-filter: blur(18px);
+}
+.submit .btns a:hover{
+    letter-spacing: 3px;
+    
+}
+.submit .btns a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.1),
+    transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+.submit .btns:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+
+}
+ /* .submit .btns::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 48px;
+    height: 20px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.submit .btns:hover::before{
+    bottom: 90px;
+   height: 60%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s; 
+}*/

@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { DataresponseService } from '../services/dataresponse.service';
+import { User } from '../gitusers/user';
+
 
 @Component({
   selector: 'app-user-profile',
@@ -7,7 +11,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('d') searchUserForm: NgForm
+  
+  userProfile : string;
+  userOne : User;
+
+  showUserProfile = false;
+
+  searchingUser(){
+    this.userProfile = this.searchUserForm.value.search;
+    console.log(this.userProfile); 
+    this.requestUsername.getUserSearch(
+      this.userProfile).then
+      ((Response)=>{
+        this.userOne = this.requestUsername.userDetails;
+        console.log(this.userOne);
+      },
+      (error)=>{
+        console.log(error);
+      });
+      this.showUserProfile = true;
+  }
+
+  constructor(private requestUsername:DataresponseService) { }
 
   ngOnInit(): void {
   }

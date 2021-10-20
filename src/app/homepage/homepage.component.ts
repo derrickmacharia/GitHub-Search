@@ -9,8 +9,8 @@ import { DataresponseService } from '../services/dataresponse.service';
 })
 export class HomepageComponent implements OnInit {
 
-  username!: User;
-  repositories!: any;
+  username: User;
+  repositories: any;
 
   constructor(private requestUsername : DataresponseService) { }
 
