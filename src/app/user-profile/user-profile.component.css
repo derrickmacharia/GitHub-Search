@@ -1,4 +1,6 @@
 .imglogo img{
+    width: 80%;
+    height: auto;
     border-radius: 50%;
 }
 .display{
