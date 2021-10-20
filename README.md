@@ -2,16 +2,32 @@
 #### This is a GitHub Search Application, 20/10/2021
 #### By **Derrick Macharia**
 ## Description
-This is an application where the user can read and quote.
+This is an application where the user can see more information about my github profile and repositories that I have worked on. The user(s) can also search their own or other github user(s) profiles and repositories.
 
 ## Screenshot of website
 <img src="src/assets/Screenshot.png" alt="">
 
 ## Setup/Installation Requirements
-* Inorder to access this website
-* you can git clone or
-* search on website
-* by pressing https://derrickmacharia.github.io/Quotes-App/
+* In order to access this Application,
+* on your terminal run, git clone https://github.com/derrickmacharia/GitHub-Search
+* cd GitHub-Search,
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 This website is fully interactive and available leave a message at the end.
 
@@ -27,11 +43,12 @@ This website is fully interactive and available leave a message at the end.
 * ANGULAR
 
 ## BDD  
-* user can read inspiration quote
-* user can add a quote 
-* add author or creator and his/her name
-* user can also like or dislike a quote
-* iuser can also delete a quote.
+* User click the links on navbar to navigate
+* The homepage displays my Profile and repositories
+* On profile page input username that signed in on github
+* Click on submit which will display the users profile and details.
+* On repo page Input the username.
+* On click it will display the users repositories.
 ## Support and contact details
 For more information,comments or clarification contact on derrick.macharia@student.moringaschool.com
 ### License
