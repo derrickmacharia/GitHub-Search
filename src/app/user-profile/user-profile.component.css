@@ -1,3 +1,6 @@
+.imglogo img{
+    border-radius: 50%;
+}
 .display{
     position: relative;
     margin: 30px;
@@ -19,4 +22,50 @@
 .forms{
     color: #fff;
     font-size: 1.4em;
+}
+.submit .btns{
+    position: relative;
+    /* width: 70px;
+    height: 10px; */
+}
+
+.submit .btns button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 16px;
+    overflow: hidden;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    backdrop-filter: blur(18px);
+}
+.submit .btns button:hover{
+    letter-spacing: 3px;
+    
+}
+.submit .btns button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.1),
+    transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+.submit .btns:hover button::before{
+    transform: skewX(45deg) translateX(200%);
+
 }
