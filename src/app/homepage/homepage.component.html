@@ -6,12 +6,12 @@
                 <img [src]="username?.avatar_url" class="card-img-top" alt="My profile picture">
             </div>
             <div class="card-body ">
-              <h5 class="card-title">Name : {{username?.login}}</h5>
-              <p class="card-text">Bio : {{username?.bio}}</p>
-              <p>Joined On : {{username?.created_at | date}}</p>
+              <h5 class="card-title">Name : <strong>{{username?.login}}</strong></h5>
+              <p class="card-text">Bio : <strong>{{username?.bio}}</strong></p>
+              <p>Joined On : <strong>{{username?.created_at | date}}</strong></p>
                 <div class="likes">
-                    <p>Followers : <i class="fa fa-user" aria-hidden="true"></i>  {{username?.followers}}</p>
-                    <p>Following : <i class="fa fa-user" aria-hidden="true"></i>  {{username?.following}}</p>
+                    <p>Followers : <i class="fa fa-user" aria-hidden="true"></i> <strong>{{username?.followers}}</strong></p>
+                    <p>Following : <i class="fa fa-user" aria-hidden="true"></i> <strong>{{username?.following}}</strong></p>
                 </div>
             </div>
         </div>
