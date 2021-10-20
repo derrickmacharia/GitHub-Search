@@ -16,20 +16,6 @@
     z-index: 1;
     color: #fff;
 }
-.display1{
-    position: relative;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
-    padding: 3rem;
-    min-width: 400px;
-    min-height: 400px;
-    color: #fff;
-}
 .forms{
     color: #fff;
     font-size: 1.4em;

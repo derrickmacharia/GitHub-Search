@@ -9,8 +9,22 @@
         </div>
     </form>
 </div>
-<div class="container" *ngFor ="let repos of repoGet" >
-    <div class="row">
-        {{repos?.description}}
+<div class="container"  >
+        <div class="row">
+        <div class="col-md-4 home" *ngFor ="let repos of repoGet">
+            <div class="display1">
+                <div class="content">
+                    <h3>{{repos.name}}</h3>
+                    <p>{{repos.description}}</p>
+                    <p>Created On : {{repos.created_at | date}}</p>
+                    <div class="submit">
+                        <div class="btns">
+                            <a href="{{repos.html_url}}">View Repositories</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>
