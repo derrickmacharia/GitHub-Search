@@ -11,6 +11,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { UserReposComponent } from './user-repos/user-repos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavComponent,
     UserProfileComponent,
     HomepageComponent,
-    UserReposComponent
+    UserReposComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

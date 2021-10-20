@@ -4,6 +4,9 @@
 ## Description
 This is an application where the user can read and quote.
 
+## Screenshot of website
+<img src="src/assets/Screenshot.png" alt="">
+
 ## Setup/Installation Requirements
 * Inorder to access this website
 * you can git clone or
@@ -12,8 +15,6 @@ This is an application where the user can read and quote.
 
 This website is fully interactive and available leave a message at the end.
 
-## Screenshot of website
-<img src="src/assets/Screenshot.png" alt="">
 
 ## Bugs
 * No known Bugs Yet

@@ -30,7 +30,7 @@
         <div class="col-md-4 home" *ngFor="let userRepo of repositories; let i = index ">
             <div class="display1">
                 <div class="content">
-                    <h3>{{userRepo.name}}</h3>
+                    <h3 appHighlight>{{userRepo.name}}</h3>
                     <p>{{userRepo.description}}</p>
                     <p>Created On : {{userRepo.created_at | date}}</p>
                     <div class="submit">

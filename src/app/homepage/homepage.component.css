@@ -46,6 +46,7 @@
 .content{
     color: #fff;
 }
+
 hr{
     color: white;
 }
@@ -84,6 +85,7 @@ hr{
 }
 .submit .btns a:hover{
     letter-spacing: 3px;
+    background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(233,30,99,0.6) 35%, rgba(0,212,255,0.8) 100%);    
     
 }
 .submit .btns a::before{
@@ -102,24 +104,4 @@ hr{
     transform: skewX(45deg) translateX(200%);
 
 }
- /* .submit .btns::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 46%;
-    transform: translateX(-50%);
-    bottom: -5px;
-    width: 48px;
-    height: 20px;
-    background: #f00;
-    border-radius: 10px;
-    transition: 0.5s;
-    transition-delay: 0s;
-}
-.submit .btns:hover::before{
-    bottom: 90px;
-   height: 60%;
-    width: 80%;
-    border-radius: 30px;
-    transition-delay: 0.5s; 
-}*/
+
